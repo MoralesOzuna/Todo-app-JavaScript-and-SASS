@@ -1,3 +1,6 @@
+@use 'variables' as v;
+
+
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
@@ -8,5 +11,13 @@ html {
 }
 
 body{
-    font-size: 1.6rem
+  background-color: v.$navyDark900;
+  font-size: 1.6rem;
+}
+.light{
+  background-color: v.$grayNeutral50;
+  
+  transition: 
+    background-color 0.3s ease;
+
 }
