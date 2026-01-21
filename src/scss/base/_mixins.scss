@@ -1,0 +1,27 @@
+
+@mixin tablet{
+    @media (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1024px){
+        @content;
+    }
+}
+
+/* Como usar este mixin
+    .card {
+    padding: 1rem;
+
+    @include tablet {
+        padding: 2rem;
+    }
+
+    @include desktop {
+        padding: 3rem;
+    }
+    }
+
+*/

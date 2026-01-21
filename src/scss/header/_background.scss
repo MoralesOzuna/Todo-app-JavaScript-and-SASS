@@ -1,4 +1,5 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
 
 .background{
@@ -7,35 +8,39 @@
     background-size: cover;
     height: 20rem;
     padding: 5rem 2rem;
-    display: flex;
-    justify-content: space-between;
     transition: background-image 0.3s ease;
+
+    @include m.tablet{
+        background-image: url(../../build/img/bg-desktop-dark.jpg);
+    }
     
  
-    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-    
-    .background__title{
-        margin: 0;
-        color: v.$grayNeutral50;
-        font-family: v.$fontFamily;
-        letter-spacing: 1rem;
-        text-transform: uppercase;
-        font-size: v.$fontSize;
+        .background__title{
+            margin: 0;
+            color: v.$grayNeutral50;
+            font-family: v.$fontFamily;
+            letter-spacing: 1rem;
+            text-transform: uppercase;
+            font-size: v.$fontSize;
 
+        }
+
+        .background__icon{
+            transition: background-image 0.3s ease;
+            background-image: url(../../src/images/icon-sun.svg);
+            background-size:contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 2rem;
+            height: 2rem;
+        
+        }
     }
-
-    .background__icon{
-        transition: background-image 0.3s ease;
-        background-image: url(../../src/images/icon-sun.svg);
-        background-size:contain;
-        background-position: center center;
-        background-repeat: no-repeat;
-        width: 2rem;
-        height: 2rem;
-       
-    }
-    
 }
 
 
@@ -46,6 +51,10 @@
     transition: background-image 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
 }
 .background--light {
-    background-image: url('../../build/img/bg-desktop-light.jpg') !important;
+    background-image: url('../../build/img/bg-mobile-light.jpg') !important;
     transition: background-image 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+
+    @include m.tablet{
+        background-image: url('../../build/img/bg-desktop-light.jpg') !important;
+    }
 }
