@@ -13,12 +13,13 @@ html {
 body{
   background-color: v.$navyDark950;
   font-size: 1.6rem;
+  font-family: v.$fontFamily;
 }
+
 .light{
   background-color: v.$grayNeutral50;
   
-  transition: 
-    background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .container{
@@ -26,3 +27,5 @@ body{
   width: 90%;
   margin: 0 auto;
 }
+
+.none{ display: none; }

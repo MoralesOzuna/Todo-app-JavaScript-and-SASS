@@ -37,13 +37,60 @@
       <div class="field todo-utility">
         <label for="todo">
             <input class="field__text" type="text" id="todo" placeholder="Create a new todo..." required> 
-          
         </label>
-     
+      </div>
+    </form>
+
+     <ul class="list">
+
+        <li class="task">
+            <label class="task__label">
+              <input class="task__checkbox" type="checkbox" id="task">
+              <span class="task__checkmark"></span>
+            </label>
+
+            <div class="text">
+              <p class="text__task">Explicame como en el pizarron</p>
+              <img class="text__icon" src="build/img/icon-cross.svg" alt="eliminate icon">
+            </div>
+        
+        </li>
+
+
+        <li class="task">
+          <label class="task__label">
+            <input class="task__checkbox" type="checkbox" id="task">
+            <span class="task__checkmark"></span>
+          </label>
+
+          <div class="text">
+            <p class="text__task">tarea</p>
+            <img class="text__icon" src="build/img/icon-cross.svg" alt="eliminate icon">
+          </div>
+      </li>
+        
+      </ul>
+
+      <div class="resume">
+        <p class="resume__text">
+          <span class="resumen__total">0</span>
+            items left
+        </p>
+       
+        <p class="resume__clear">Clear Completed</p>
       </div>
 
-      
-    </form>
+
+      <div class="filters none">
+        <button class="filters__button filters__button--blue" data-filter="all">All</button>
+        <button class="filters__button" data-filter="active">Active</button>
+        <button class="filters__button" data-filter="completed">Completed</button>
+      </div>
+
+
+
+
+      <p class="drag">  Drag and drop to reorder list </p>
   </main>
 
   
@@ -51,20 +98,8 @@
 
 
 
-  <!-- Add dynamic number --> items left
 
-  All
-  Active 
-  Completed
 
-  Clear Completed
-
-  Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 
   <script src="build/js/app.js"> </script>
 </body>

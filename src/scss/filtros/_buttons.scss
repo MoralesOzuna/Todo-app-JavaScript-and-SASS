@@ -1,0 +1,52 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.filters{
+    margin-top: 2rem;
+    background-color: v.$navyDark900;
+    padding: 1.5rem 3rem;
+    border-radius: .7rem;
+    display: flex;
+    justify-content: space-around;
+
+    
+
+    &__button{
+        font-family: v.$fontFamily;
+        font-weight: v.$fontWg700;
+        font-size: 1.5rem;
+        color: v.$purpleDarK700;
+        font-style: none;
+        background: none;
+        border: none;
+    }
+
+    &__button--blue{
+        color: v.$bluePrimary !important;
+    }
+}
+
+
+body.light .filters{
+     background-color: v.$grayNeutral50;
+     -webkit-box-shadow: 5px 5px 18px 18px rgba(202,205,232,0.53); 
+box-shadow: 5px 5px 18px 18px rgba(202,205,232,0.53);
+
+}
+body.light .filters__button{
+  color: v.$grayNeutral600;
+}
+
+
+.drag{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    color: v.$navyNeutral850;
+    font-weight: v.$fontWg700;
+    font-size: 1.2rem;
+}
+body.light .drag{
+    color: v.$grayNeutral300;
+}

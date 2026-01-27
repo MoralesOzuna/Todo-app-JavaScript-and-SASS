@@ -43,18 +43,16 @@
     }
 }
 
-
-.background__icon--light{
+body.light .background__icon{
 
     /*cubic-bezier(0.6, -0.28, 0.74, 0.05)  */
     background-image: url(../../build/img/icon-moon.svg) !important;
     transition: background-image 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
 }
-.background--light {
+body.light .background{
     background-image: url('../../build/img/bg-mobile-light.jpg') !important;
     transition: background-image 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
-
-    @include m.tablet{
+@include m.tablet{
         background-image: url('../../build/img/bg-desktop-light.jpg') !important;
     }
 }
