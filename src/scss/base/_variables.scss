@@ -8,15 +8,15 @@ $bluePrimary: hsl(220, 98%, 61%);
 $checkBackground: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 
 //Neutral
-$grayNeutral50: hsl(0, 0%, 98%);
-$purpleNeutral300: hsl(234, 39%, 85%);
+$grayNeutral50: #fafafa;
+$purpleNeutral300: #cacde8;
 $grayNeutral300: hsl(233, 11%, 84%);
 $grayNeutral600:  hsl(236, 9%, 61%);
 $navyNeutral850:hsl(235, 19%, 35%);
 
 //Dark Theme
-$navyDark950:hsl(235, 21%, 11%);
-$navyDark900:hsl(235, 24%, 19%);
+$navyDark950:#161722;
+$navyDark900:#25273c;
 $purpleDarK300: hsl(234, 39%, 85%);
 $purpleDarK100Hover: hsl(236, 33%, 92%);
 $purpleDarK600: hsl(235, 16%, 43%);

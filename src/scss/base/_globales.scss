@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use 'mixins' as m;
 
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -23,9 +24,25 @@ body{
 }
 
 .container{
-  max-width: 40rem;
+  max-width: 50rem;
   width: 90%;
   margin: 0 auto;
 }
 
 .none{ display: none; }
+
+@include m.tablet{
+  .resume, .filters{
+    display: none;
+  }
+
+  .footer{
+    display:flex;
+  }
+  .filters--desktop{
+    display: contents;
+  }
+  .resume__clear--desktop{
+    display: inline;
+  }
+}

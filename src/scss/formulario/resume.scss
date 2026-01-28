@@ -11,18 +11,47 @@
     padding: .6rem 2rem;
     font-size: 1.2rem;
     &__text, &__clear{
-       color: v.$purpleDarK700;
+       color: #4d5066 !important;
     }
 
     &__total{
 
     }
-   
+}
+
+.resume__text--desktop{
+     display: inline;
+}
+.resume__clear--desktop{
+     display: inline;
+     font-size: 1.5rem;
+
+     
 }
 
 body.light .resume{
      background-color: v.$grayNeutral50;
 }
-body.light .resume__text, .resume__clear {
+body.light .resume__text .resume__clear {
      color: v.$grayNeutral600;
+}
+
+
+.footer{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     background-color: v.$navyDark900;
+     margin-top: -1.6rem;
+     border-radius: .5rem;
+    box-shadow: 2px 47px 60px -23px rgba(0,0,0,0.84);
+-webkit-box-shadow: 2px 47px 60px -23px rgba(0,0,0,0.84);
+-moz-box-shadow: 2px 47px 60px -23px rgba(0,0,0,0.84);
+}
+
+body.light .footer{
+     background-color: v.$grayNeutral50 ;
+     box-shadow: -3px 12px 16px 0px rgba(202,205,232,0.75);
+-webkit-box-shadow: -3px 12px 16px 0px rgba(202,205,232,0.75);
+-moz-box-shadow: -3px 12px 16px 0px rgba(202,205,232,0.75);
 }

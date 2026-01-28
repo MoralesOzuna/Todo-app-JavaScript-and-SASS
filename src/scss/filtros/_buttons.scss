@@ -2,6 +2,8 @@
 @use 'base/mixins' as m;
 
 
+
+
 .filters{
     margin-top: 2rem;
     background-color: v.$navyDark900;
@@ -9,6 +11,9 @@
     border-radius: .7rem;
     display: flex;
     justify-content: space-around;
+      box-shadow: 2px 47px 60px -23px rgba(0,0,0,0.84);
+-webkit-box-shadow: 2px 47px 60px -23px rgba(0,0,0,0.84);
+-moz-box-shadow: 2px 47px 60px -23px rgba(0,0,0,0.84);
 
     
 
@@ -32,7 +37,12 @@ body.light .filters{
      background-color: v.$grayNeutral50;
      -webkit-box-shadow: 5px 5px 18px 18px rgba(202,205,232,0.53); 
 box-shadow: 5px 5px 18px 18px rgba(202,205,232,0.53);
+}
 
+body.light .filters--desktop{
+    background: none;
+    box-shadow: none;
+    background-color: v.$grayNeutral50;
 }
 body.light .filters__button{
   color: v.$grayNeutral600;
@@ -47,6 +57,15 @@ body.light .filters__button{
     font-weight: v.$fontWg700;
     font-size: 1.2rem;
 }
-body.light .drag{
+body.light  .drag{
     color: v.$grayNeutral300;
+}
+
+.filters--desktop{
+ display: inline;
+ background:none;
+ padding: none;
+ margin: 0;
+
+
 }
