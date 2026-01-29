@@ -9,6 +9,7 @@
     height: 20rem;
     padding: 5rem 2rem;
     transition: background-image 0.3s ease;
+    
 
     @include m.tablet{
         background-image: url(../../build/img/bg-desktop-dark.jpg);
